@@ -16,9 +16,12 @@ def init_db():
     conn.commit()
     conn.close()
 
+# Call init_db on import so it runs in Render too
+init_db()
+
 @app.route('/')
 def home():
-    return render_template('index.html')  # make sure your HTML file is in a 'templates' folder
+    return render_template('index.html')  # HTML must be in 'templates' folder
 
 @app.route('/submit-form', methods=['POST'])
 def submit_form():
@@ -32,15 +35,17 @@ def submit_form():
     conn.commit()
     conn.close()
 
-    return redirect('/')  # or render a thank you page
+    return redirect('/')
+
 @app.route('/messages')
 def messages():
     conn = sqlite3.connect('contact_data.db')
     c = conn.cursor()
-    c.execute("SELECT id, name, email, message FROM contacts")  # include id!
+    c.execute("SELECT id, name, email, message FROM contacts")
     messages = c.fetchall()
     conn.close()
     return render_template('messages.html', messages=messages)
+
 @app.route('/delete/<int:message_id>', methods=['POST'])
 def delete_message(message_id):
     conn = sqlite3.connect('contact_data.db')
@@ -51,6 +56,4 @@ def delete_message(message_id):
     return redirect('/messages')
 
 if __name__ == '__main__':
-    init_db()
     app.run(host="0.0.0.0", port=5000, debug=False)
-
