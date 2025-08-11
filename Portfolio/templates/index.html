@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durga Prasad</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: rgb(22, 21, 36);
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(221, 216, 216, 0.3);
+        }
+
+        .name {
+            color: rgb(93, 162, 232);
+            padding-left: 210px;
+        }
+
+        .anchor {
+            padding-left: 180px;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+        }
+
+        .anchor a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .welcome {
+            background-color: rgb(22, 21, 36);
+            padding-bottom: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+        }
+
+        .w {
+            padding-top: 120px;
+            color: rgb(93, 162, 232);
+            font-weight: 500;
+            font-size: 1.150rem;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .skyblue {
+            color: rgb(93, 162, 232);
+        }
+
+        .white {
+            color: white;
+        }
+
+        .n {
+            font-weight: 500;
+            font-size: clamp(1.2rem, 5vw, 2rem);
+            line-height: 1.75rem;
+        }
+
+        .role {
+            color: white;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .q {
+            color: white;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .but {
+            width: 300px;
+            height: 50px;
+            display: flex;
+            gap: 20px;
+            padding-left: 35px;
+        }
+
+        .but button {
+            border-radius: 15px;
+        }
+
+        .but a {
+            text-decoration: none;
+            padding: 30px 20px 30px 20px;
+            font-family: "Dancing Script", cursive;
+            color: black;
+        }
+
+        .about-sec {
+            padding-top: 30px;
+            padding-bottom: 160px;
+            background-color: rgb(22, 21, 36);
+        }
+
+        .about {
+            color: white;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about h1 {
+            margin-bottom: 20px;
+            font-family: "Merienda", cursive;
+        }
+
+        .about p {
+            margin-top: 0px;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .about-boxes {
+            display: flex;
+            padding-top: 60px;
+
+        }
+
+        .about-box1 {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background-color: rgb(31, 41, 55);
+            border-radius: 25px;
+            margin-left: 240px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .about-box1 img {
+            width: 100px;
+            height: 100px;
+            padding-left: 10px;
+            padding-top: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+
+        }
+
+        .about-box1 h2 {
+            color: white;
+        }
+
+        .about-box1 p {
+            color: white;
+        }
+
+        .about-box1 h3 {
+            color: rgb(93, 162, 232);
+        }
+
+        .about-box2 {
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            background-color: rgb(31, 41, 55);
+            border-radius: 25px;
+            margin-left: 50px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-box2 h3 {
+            font-family: "Dancing Script", cursive;
+            color: rgb(93, 162, 232);
+            padding-left: 10px;
+        }
+
+        .vision {
+            color: rgb(236, 240, 243);
+            font-family: "Dancing Script", cursive;
+            font-weight: bold;
+        }
+
+        .about-box2 {
+            color: white;
+        }
+
+        .skill-section {
+            padding-bottom: 100px;
+            background-color: rgb(31, 41, 55);
+            padding-top: 50px;
+        }
+
+        .skill-data {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .skill-data p {
+            font-family: "Dancing Script", cursive;
+            margin-top: 0px;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .skill-box {
+            background-color: rgb(22, 21, 36);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .skill-title {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #334155;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            border-radius: 5px;
+        }
+
+        .tools-section {
+            text-align: center;
+            margin-top: 50px;
+
+        }
+
+        .tools-section h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .tool-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+
+        }
+
+        .badge {
+            background-color: #334155;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .certificate-section {
+            padding-bottom: 100px;
+            background-color: rgb(22, 21, 36);
+        }
+
+        .my {
+            color: white;
+            padding-top: 50px;
+            padding-left: 700px;
+        }
+
+        .achievement {
+            color: white;
+            font-family: "Dancing Script", cursive;
+            padding-left: 630px;
+        }
+
+        .c-boxes {
+            font-family: Arial, sans-serif;
+
+            color: white;
+            padding-left: 290px;
+            padding-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .card {
+            background-color: #1f1f2e;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 500px;
+            text-decoration: none;
+            color: white;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-header {
+            background: #292940;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body p {
+            font-size: 15px;
+            color: #cccccc;
+        }
+
+        .Project-section {
+            background-color: rgb(22, 21, 36);
+            padding-bottom: 100px;
+            padding-top: 20px;
+        }
+
+        .Project-section h1 {
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .Project-section h3 {
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .p-box {
+            padding-top: 30px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-left: 400px;
+            color: white;
+        }
+
+        .project-box {
+            display: flex;
+            background-color: #1e293b;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+            width: 700px;
+        }
+
+        .project-img {
+            flex: 1;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-content {
+            flex: 2;
+            padding: 20px 30px;
+        }
+
+        .project-content h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        .project-content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .tech-tags {
+            margin: 15px 0;
+        }
+
+        .tech-tags span {
+            display: inline-block;
+            background-color: #334155;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .btn-code {
+            background-color: #1f2937;
+            color: white;
+        }
+
+        .btn-demo {
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            color: white;
+        }
+
+        .more-work {
+            color: white;
+            padding-left: 700px;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .more-git {
+            color: white;
+            padding-left: 690px;
+
+            padding-top: 20px;
+        }
+
+        .more-git button {
+            width: 200px;
+            padding: 13px;
+            border-radius: 20px;
+            background-color: inherit;
+
+        }
+
+        .more-git a {
+            text-decoration: none;
+            font-family: "Dancing Script", cursive;
+            color: white;
+        }
+
+        .education {
+            padding-bottom: 50px;
+            background-color: rgb(31, 41, 55);
+            padding-top: 50px;
+        }
+
+        .e-title {
+            color: white;
+            padding-left: 600px;
+        }
+
+        .e-mile {
+            color: white;
+            padding-left: 600px;
+            font-family: "Dancing Script", cursive;
+        }
+
+        .e-journey {
+
+            font-family: 'Segoe UI', sans-serif;
+            background-color: rgb(31, 41, 55);
+            color: #fff;
+
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .container {
+            padding: 20px 30px;
+            position: relative;
+            width: 40%;
+        }
+
+        .container::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #2563eb;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #2563eb;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #384150;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h4 {
+            color: #3b82f6;
+            margin-bottom: 8px;
+        }
+
+        .h2 {
+            color: #fff;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .container .content:hover {
+            transform: scale(1.03);
+            background-color: #334155;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 10px 25px rgba(93, 94, 96, 0.4);
+            cursor: pointer;
+        }
+
+        .get-in-touch {
+            background-color: rgb(31, 41, 55);
+            padding-bottom: 50px;
+        }
+
+        .get {
+            color: white;
+            padding-left: 670px;
+            padding-top: 30px;
+        }
+
+        .hello {
+            color: white;
+            padding-left: 550px;
+            font-family: "Dancing Script", cursive;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1e293b;
+            color: white;
+        }
+
+        .contact-section {
+            display: flex;
+            gap: 40px;
+            padding: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-info {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+
+        .info-box {
+            display: flex;
+            align-items: center;
+            background-color: #0f172a;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-box i {
+            font-size: 28px;
+            margin-right: 15px;
+            color: #3b82f6;
+        }
+
+        .info-box h4 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 15px;
+            text-decoration: none;
+            background-color: #0f172a;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .contact-form {
+            flex: 1;
+            max-width: 500px;
+            background-color: #0f172a;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+        }
+
+        .contact-form h2 {
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: 500;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 12px;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form button {
+            background-color: #3b82f6;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button i {
+            margin-right: 8px;
+        }
+
+        .contact-form button:hover {
+            background-color: #2563eb;
+        }
+
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 40px 20px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-column h2,
+        .footer-column h3 {
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+
+        .footer-column p,
+        .footer-column li,
+        .footer-column a {
+            color: #ccc;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-icons a {
+            margin-right: 15px;
+            font-size: 24px;
+            color: #ccc;
+            transition: transform 0.2s, color 0.3s;
+        }
+
+        .footer-icons a:hover {
+            transform: scale(1.2);
+            color: #60a5fa;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #222;
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* ========== Tablet Devices (768px to 1024px) ========== */
+        @media (max-width: 1024px) {
+            .name {
+                padding-left: 50px;
+            }
+
+            .anchor {
+                padding-left: 40px;
+                font-size: 16px;
+            }
+
+            .about-boxes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-box1,
+            .about-box2 {
+                margin-left: 0;
+                margin-bottom: 30px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .p-box {
+                padding-left: 100px;
+            }
+
+            .project-box {
+                flex-direction: column;
+                width: 90%;
+                margin: auto;
+            }
+
+            .more-work,
+            .more-git,
+            .my,
+            .achievement,
+            .e-title,
+            .e-mile,
+            .get,
+            .hello {
+                padding-left: 100px;
+                text-align: center;
+            }
+
+            .contact-section {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        /* ========== Mobile Devices (Below 768px) ========== */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            .name {
+                padding-left: 0;
+                font-size: 20px;
+            }
+
+            .anchor {
+                padding-left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .w {
+                font-size: 1rem;
+                padding-top: 80px;
+            }
+
+            .n {
+                font-size: 1.5rem;
+            }
+
+            .but {
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0;
+                gap: 10px;
+            }
+
+            .about-box1,
+            .about-box2 {
+                width: 90%;
+                margin-left: 0;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+
+            .p-box {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .project-box {
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto 40px;
+            }
+
+            .my,
+            .achievement,
+            .more-work,
+            .more-git,
+            .e-title,
+            .e-mile,
+            .get,
+            .hello {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .contact-section {
+                padding: 20px;
+            }
+
+            .contact-form,
+            .contact-info {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* ----- Welcome Section ----- */
+            .welcome {
+                padding-bottom: 60px;
+                padding-top: 40px;
+            }
+
+            .w {
+                padding-top: 60px;
+                font-size: 1rem;
+            }
+
+            .n {
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                padding: 0 10px;
+            }
+
+            .role,
+            .q {
+                font-size: 1rem;
+                padding: 0 15px;
+                text-align: center;
+            }
+
+            .but {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                padding-left: 0;
+                margin-top: 20px;
+            }
+
+            .but a {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            /* ----- Certificate Section ----- */
+            .certificate-section {
+                padding-bottom: 60px;
+            }
+
+            .my,
+            .achievement {
+                padding-left: 0;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .c-boxes {
+                padding-left: 0;
+                justify-content: center;
+                padding: 20px;
+                gap: 30px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+            }
+
+            .card-header {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            .card-body {
+                padding: 15px;
+            }
+
+            .card-body p {
+                font-size: 14px;
+            }
+
+            .more-git {
+                padding-left: 0;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .more-git button {
+                width: 80%;
+                padding: 12px;
+            }
+
+            .more-git a {
+                font-size: 16px;
+            }
+        }
+
+        .resume-btn {
+            background-color: #3b82f6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume-btn:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="name">
+            <h2>Durga Prasad</h2>
+        </div>
+        <div class="anchor">
+            <a href="#ab">About</a>
+            <a href="#sk">Skills</a>
+            <a href="#ce">Certificates</a>
+            <a href="#pr">Projects</a>
+            <a href="#ed">Education</a>
+            <a href="#co">Contact</a>
+            <a href="{{ url_for('static', filename='DurgaPrasad_resume (1).pdf') }}" target="_blank"
+                class="resume-btn">Resume</a>
+        </div>
+    </nav>
+    <div class="welcome">
+        <div class="w">
+            <p>Welcome to my portfolio</p>
+        </div>
+        <div class="n">
+            <h1><span class="white">Hi, I'm</span> <span class="skyblue">Durga Prasad</span></h1>
+        </div>
+        <div class="role">
+            <h2>Aspiring Python Full Stack Developer</h2>
+        </div>
+        <div class="q">
+            <h3>Turning ideas into impactful web solutions</h3>
+        </div>
+        <div class="but">
+            <button><a href="#pr" class="vw">View My Work</a></button>
+            <button><a href="#co">Contact Me</a></button>
+        </div>
+    </div>
+    <div id="ab" class="about-sec">
+        <div class="about">
+            <h1>About Me</h1>
+            <p>Get to know me a little better</p>
+        </div>
+        <div class="about-boxes">
+            <div class="about-box1">
+                <img src="{{ url_for('static', filename='Pass port size.jpg') }}" alt="My Image">
+                <h2>Durga Prasad</h2>
+                <p>B.Tech CSE</p>
+                <h3>Python Full Stack Developer</h3>
+            </div>
+            <div class="about-box2">
+                <h3>My Vision</h3>
+                <div class="vision">
+                    <p>To become a top developer who can deliver innovative solutions to businesses worldwide.</p>
+                </div>
+                <p>Computer Science Engineering student with strong foundations in machine learning, data
+                    visualization, and web technologies. Proven ability to deliver impactful projects through
+                    collaborative problem-solving, with experience in Python, SQL, HTML/CSS, and Power BI.
+                    Passionate about creating AI-driven solutions and contributing to innovative tech environments.</p>
+            </div>
+        </div>
+    </div>
+    <div id="sk" class="skill-section">
+        <div class="skill-data">
+            <h1>My Skills</h1>
+            <p>Technologies and tools I work with</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-box">
+                <div class="skill-title">HTML</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">CSS</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 55%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">Python</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">SQL</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">Flask</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">Java</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">GitHub</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tools-section">
+            <h2>Tools & Technologies</h2>
+            <div class="tool-badges">
+                <div class="badge">VS Code</div>
+                <div class="badge">Git</div>
+                <div class="badge">Bootstrap</div>
+                <div class="badge">ChatGPT</div>
+                <div class="badge">Power BI</div>
+                <div class="badge">Machine Learning</div>
+            </div>
+        </div>
+    </div>
+    <div id="ce" class="certificate-section">
+        <div class="my">
+            <h1>My Certificates</h1>
+        </div>
+        <div class="achievement">
+            <h3>Academic achievements and participations</h3>
+        </div>
+        <div class="c-boxes">
+            <a href="{{ url_for('static', filename='Feynn Labs Certificate.pdf') }}" target="_blank" class="card">
+                <div class="card-header">Machine Learning Intern</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Feynn Labs</p>
+                    <p><strong>Year:</strong> 2025</p>
+                    <p>Completed Machine Learning Internship</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='Python_certificate.pdf') }}" target="_blank" class="card">
+                <div class="card-header">Python</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Cisco</p>
+                    <p><strong>Year:</strong> 2025</p>
+                    <p>Course Completion Certificate</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='SQL IBM.pdf') }}" target="_blank" class="card">
+                <div class="card-header">SQL</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>IBM</p>
+                    <p><strong>Year:</strong> 2025</p>
+                    <p>Course Completion Certificate</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='AI-ML AICTE.pdf') }}" target="_blank" class="card">
+                <div class="card-header">AI-ML</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Edu Skills</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p>Completed AI-ML Virtual Internship</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='Wipro TalentNext  Java Full Stack Certification.pdf') }}"
+                target="_blank" class="card">
+                <div class="card-header">Java Full Stack</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Wipro</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p>Course Completion Certificate</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='Android Developer AICTE.pdf') }}" target="_blank" class="card">
+                <div class="card-header">Android Developer</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Edu Skills</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p>Completed Android Developer Virtual Internship</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='DataVisualization certificate.jpg') }}" target="_blank"
+                class="card">
+                <div class="card-header">Power BI</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Brainovision</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p>Completed Power BI Internship</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='python_basic certificate.pdf') }}" target="_blank" class="card">
+
+                <div class="card-header">Python</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Hacker Rank</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p>Course Completion Certificate</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='AI&ML certification.jpg') }}" target="_blank" class="card">
+                <div class="card-header">AI-ML</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Hack Boats</p>
+                    <p><strong>Year:</strong> 2024</p>
+                    <p>Attended 6 days Innovation Sprint</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+            <a href="{{ url_for('static', filename='Data Analytics.pdf') }}" target="_blank" class="card">
+                <div class="card-header">Data Analytics</div>
+                <div class="card-body">
+                    <p><strong>Company:</strong>Accenture</p>
+                    <p><strong>Year:</strong> 2023</p>
+                    <p>Course Completion Certificate</p>
+                    <p>Click here to view</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="pr" class="Project-section">
+        <div>
+            <h1>My Projects</h1>
+        </div>
+        <div>
+            <h3>Here are some of my recent works</h3>
+        </div>
+        <div class="p-box">
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="{{ url_for('static', filename='railway.png') }}" alt="Railway Image">
+                </div>
+                <div class="project-content">
+                    <h2>Railway Condition Monitoring System for Preventive Maintenance</h2>
+                    <p>Developed a real-time AI system to detect railway track defects using image processing
+                        techniques.Designed alert systems to notify teams for preventive maintenance, minimizing service
+                        disruptions.</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Flask</span>
+                        <span>SQL</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/Durgaprasad53/Railway-Track-Condition-Monitoring-System-For-Preventive-Maintenance-"
+                            class="btn-code" target="_blank">🔗 Code</a>
+                        <a href="#" class="btn-demo">🚀 Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <div class="project-img">
+                    <img src="{{ url_for('static', filename='Pest img.avif') }}" alt="Pest Detection" />
+
+                </div>
+                <div class="project-content">
+                    <h2>AI Powered Pest Detection System for Improved Crop protection</h2>
+                    <p>The proposed system integrates computer vision and machine learning to detect
+                        pests in real-time</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/Durgaprasad53/AI-based-Pest-Detection-and-Alert-System-for-Smart-Farming"
+                            class="btn-code" target="_blank">🔗 Code</a>
+
+
+                        <a href="#" class="btn-demo">🚀 Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-work">Want to see more work?</div>
+        <div class="more-git"><button><a href="https://github.com/Durgaprasad53" target="_blank">View All Projects on
+                    Github</a></button></div>
+    </div>
+    <div class="education">
+        <div class="e-title">
+            <h1>My Educational Journey</h1>
+        </div>
+        <div class="e-mile">
+            <h3>Academic milestones and achievements</h3>
+        </div>
+    </div>
+    <div id="ed" class="e-journey">
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h4>2018-2019</h4>
+                    <h2>10th Standard</h2>
+                    <p>Nagarjuna High School</p>
+                    <p>Percentage: 93%</p>
+                </div>
+            </div>
+
+            <div class="container right">
+                <div class="content">
+                    <h4>2019-2021</h4>
+                    <h2>Intermediate (M.P.C)</h2>
+                    <p>Narayana Junior College</p>
+                    <p>Percentage: 92.8%</p>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <h4>2021-2025</h4>
+                    <h2>B.Tech in Computer Science</h2>
+                    <p>KKR & KSR Institute of Technology and Sciences</p>
+                    <p>CGPA:8.47</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="co" class="get-in-touch">
+        <div class="get">
+            <h1>Get In Touch</h1>
+        </div>
+        <div class="hello">
+            <h3>Let's discuss your next project or just say hello!</h3>
+        </div>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>durgaprasadindhanam@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91 8555848467</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>India</p>
+                    </div>
+                </div>
+
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/Durgaprasad53"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/indanam-durgaprasad-a5381424b/"><i
+                            class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form action="/submit-form" method="POST">
+                    <label>Your Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+
+                    <label>Your Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+
+                    <label>Your Message</label>
+                    <textarea name="message" placeholder="Enter your message" required></textarea>
+
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Durga Prasad</h2>
+                <p>B.Tech CSE Student passionate about creating innovative web solutions and building applications that
+                    make a difference.</p>
+                <div class="footer-icons">
+                    <a href="https://github.com/Durgaprasad53" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/indanam-durgaprasad-a5381424b/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:durgaprasadindhanam@gmail.com" target="_blank">
+                        <i class="fas fa-user"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#ab">About</a></li>
+                    <li><a href="#sk">Skills</a></li>
+                    <li><a href="#ce">Certificates</a></li>
+                    <li><a href="#pr">Projects</a></li>
+                    <li><a href="#ed">Education</a></li>
+                    <li><a href="#co">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <p>📍 India</p>
+                <p>📧 durgaprasadindhanam@gmail.com</p>
+                <p>🎓 B.Tech CSE</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Durga Prasad. Made with 💜</p>
+        </div>
+    </footer>
+</body>
+
+</html>
